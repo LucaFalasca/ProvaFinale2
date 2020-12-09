@@ -1,4 +1,9 @@
 language: java
 jdk:
     -openjdk15
+addons:
+  sonarcloud:
+    organization: "lucafalasca"
+    token:
+      secure: "43c31032817588bcd92e56ceaf5b17301e446f1c" # encrypted value of your token
 script: ant build
