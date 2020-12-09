@@ -2,7 +2,6 @@ language: java
 jdk:
     -openjdk15
     addons:
-      sonarcloud:
 script: 
     - ant build
     - sonar-scanner
