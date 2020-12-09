@@ -1,11 +1,4 @@
 language: java
 jdk:
     -openjdk15
-    addons:
-        sonarcloud:
-            organization: "lucafalasca" # the key of the org you chose at step #3
-            token:
-              secure: "adb3fbb146d2f0a62709c1d24d20002bee271584" # encrypted value of your token
-script: 
-    - ant build
-    - sonar-scanner
+script: ant build
